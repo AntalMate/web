@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listák</title>
+</head>
+<body>
+    <a href="index.html">Vissza a főoldalra.</a>
+    <h2>Listák</h2>
+    <p>Kedvenc tantárgyaim</p>
+    <ol>
+        <li>IKT projektmunka</li>
+        <li>Programozás</li>
+        <li>Informatika és távközlés</li>
+    </ol>
+    <p>Kedvenc tevékenységeim</p>
+    <ul>
+        <li>Számítógépezés</li>
+        <li>Programozás</li>
+        <li>Büykölgetés</li>
+    </ul>
+</body>
+</html>
