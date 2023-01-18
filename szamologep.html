@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+        #a,
+        #b,
+        #c {
+            color:black ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset id="field">
+        <legend>Egyszerű számológép</legend>
+        <form action="javasript:void(0)">
+            <input type="number" name="szam" id="a" placeholder="Szám 1"> .
+            <input type="number" name="szam" id="b" placeholder="Szám 2"> =
+            <input type="text" name="szam" id="c" readonly placeholder="Eredmény">
+            <br><br>
+            <input type="button" value="+" onclick="ad()">
+            <input type="button" value="-" onclick="kiv()">
+            <input type="button" value="*" onclick="szor()">
+            <input type="button" value="/" onclick="oszt()">
+            <input type="reset" value="Törlés">
+        </form>
+    </fieldset>
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+            document.getElementById("field").style.backgroundColor = "red"; 
+        }
+        function kiv() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+        }
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+    </script>
+</body>
+
+</html>
