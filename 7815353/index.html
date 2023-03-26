@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="javascript:void(0);">
+        <p id="nev">hamburger</p>
+        <input type="number" name="" id="szam">
+        <input type="button" value="Hozzáad" onclick="ad()">
+    </form>
+    <form action="javascript:void(0);">
+        <p id="nev">hodog</p>
+        <input type="number" name="" id="szam">
+        <input type="button" value="Hozzáad" onclick="ad()">
+    </form>
+   
+    <script>
+        function ad(){
+            var szam=document.getElementById("szam");
+            var nev=document.getElementById("nev").innerHTML;
+
+            localStorage.setItem(nev, szam.value)
+
+        }
+    </script>
+</body>
+</html>
