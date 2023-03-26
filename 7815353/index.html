@@ -10,18 +10,18 @@
     <form action="javascript:void(0);">
         <p id="nev">hamburger</p>
         <input type="number" name="" id="szam">
-        <input type="button" value="Hozzáad" onclick="ad()">
+        <input type="button" value="Hozzáad" onclick="ad(this.form)">
     </form>
     <form action="javascript:void(0);">
         <p id="nev">hodog</p>
         <input type="number" name="" id="szam">
-        <input type="button" value="Hozzáad" onclick="ad()">
+        <input type="button" value="Hozzáad" onclick="ad(this.form)">
     </form>
    
     <script>
-        function ad(){
-            var szam=document.getElementById("szam");
-            var nev=document.getElementById("nev").innerHTML;
+        function ad(form){
+            var szam=form.elements("szam");
+            var nev=form.elements("nev").innerHTML;
 
             localStorage.setItem(nev, szam.value)
 
